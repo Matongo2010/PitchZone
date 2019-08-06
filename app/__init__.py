@@ -26,6 +26,7 @@ def create_app(config_name):
     config_options[config_name].init_app(app)
 
     # initializing flask extensions
+
     bootstrap.init_app(app)
     db.init_app(app)
     mail.init_app(app)
